@@ -3,6 +3,7 @@
 	"author": "AkashUrRehman",
 	"description": "A practice in Node.js and Backend",
 	"keywords": [ "freecodecamp", "nodejs", "backend" ],
+	"license": "MIT",
 	"dependencies": {
 		"express": "^4.14.0"
 	},
