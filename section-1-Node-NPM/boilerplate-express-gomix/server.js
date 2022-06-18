@@ -6,7 +6,9 @@
 var bGround = require('fcc-express-bground');
 var myApp = require('./myApp');
 var express = require('express');
+const path = require('path')
 var app = express();
+app.use(express.static(__dirname + '/public'));
 
 if (!process.env.DISABLE_XORIGIN) {
   app.use(function(req, res, next) {

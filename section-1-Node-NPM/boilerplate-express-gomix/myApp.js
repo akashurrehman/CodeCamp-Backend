@@ -3,12 +3,13 @@ let app = express();
 
 console.log("Hello World")
 
-app.get("/",function(req,res){
-    res.send("Hello Express");
-})
+app.use('/public',express.static(path.join(__dirname, 'public/style.css')));
 
-
-
+app.get("/json", (req, res) => {
+  res.json({
+    message: "Hello json"
+  });
+});
 
 
 
