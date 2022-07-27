@@ -8,7 +8,10 @@ var myApp = require('./myApp');
 var express = require('express');
 const path = require('path')
 var app = express();
-app.use(express.static(__dirname + '/public'));
+// app.use(express.static(__dirname + '/public'))
+// app.get("/public", function(req, res) {
+// res.sendFile("/views/index.html"  , { root : __dirname})
+// });
 
 if (!process.env.DISABLE_XORIGIN) {
   app.use(function(req, res, next) {
